@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn English</title>
+  <meta name="description" content="Learn English with simple lessons, vocabulary, grammar tips and quizzes.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo">📘 Learn English</a>
+      <nav>
+        <a href="#vocabulary">Vocabulary</a>
+        <a href="#grammar">Grammar</a>
+        <a href="#phrases">Phrases</a>
+        <a href="#quiz">Quiz</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Learn English, one step at a time</h1>
+      <p>Simple lessons in vocabulary, grammar and everyday phrases — plus a quick quiz to check what you know.</p>
+      <a href="#vocabulary" class="btn">Start learning</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="word-of-day" class="card highlight">
+      <h2>Word of the Day</h2>
+      <p class="word" id="wod-word"></p>
+      <p class="meaning" id="wod-meaning"></p>
+      <p class="example" id="wod-example"></p>
+    </section>
+
+    <section id="vocabulary">
+      <h2>Vocabulary</h2>
+      <p class="hint">Tap a card to see its meaning.</p>
+      <div class="grid" id="vocab-grid"></div>
+    </section>
+
+    <section id="grammar">
+      <h2>Grammar Tips</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Present Simple</h3>
+          <p>Use it for habits and facts.</p>
+          <p class="example">She <b>reads</b> every day. Water <b>boils</b> at 100°C.</p>
+        </article>
+        <article class="card">
+          <h3>Present Continuous</h3>
+          <p>Use it for actions happening now.</p>
+          <p class="example">I <b>am studying</b> English right now.</p>
+        </article>
+        <article class="card">
+          <h3>Past Simple</h3>
+          <p>Use it for finished actions in the past.</p>
+          <p class="example">We <b>visited</b> Chennai last year.</p>
+        </article>
+        <article class="card">
+          <h3>A vs. An</h3>
+          <p>Use <b>an</b> before a vowel sound, <b>a</b> before a consonant sound.</p>
+          <p class="example"><b>an</b> apple, <b>an</b> hour, <b>a</b> book, <b>a</b> university</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="phrases">
+      <h2>Everyday Phrases</h2>
+      <table class="phrases">
+        <thead><tr><th>Situation</th><th>Phrase</th></tr></thead>
+        <tbody>
+          <tr><td>Greeting</td><td>How are you doing today?</td></tr>
+          <tr><td>Asking for help</td><td>Could you help me, please?</td></tr>
+          <tr><td>Not understanding</td><td>Sorry, could you say that again?</td></tr>
+          <tr><td>Thanking</td><td>Thank you so much for your help.</td></tr>
+          <tr><td>Apologising</td><td>I'm sorry, I didn't mean to.</td></tr>
+          <tr><td>Saying goodbye</td><td>See you soon. Take care!</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="quiz">
+      <h2>Quick Quiz</h2>
+      <div class="card" id="quiz-box">
+        <p id="quiz-progress" class="hint"></p>
+        <p id="quiz-question" class="question"></p>
+        <div id="quiz-options" class="options"></div>
+        <p id="quiz-feedback" class="feedback"></p>
+        <button id="quiz-next" class="btn" hidden>Next</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Learn English · Keep practising every day!</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
